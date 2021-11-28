@@ -1,24 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: "Lucida Grande";
 }
 
-
-
 a {
   text-decoration: none;
 }
 
+/* Tambahkan CSS untuk clear */
+
+
 .container {
-  width: 1170px;
+  width: 100%;
   padding: 0 15px;
   margin: 0 auto;
-  
 }
 
 .top-wrapper {
   padding: 180px 0 100px 0;
-  background-image: url(https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=freestocks-_3Q3tsJ01nc-unsplash.jpg);
+  background-image: url(https://prog-8.com/images/html/advanced/top_en.png);
   background-size: cover;
   color: white;
   text-align: center;
@@ -27,7 +31,7 @@ a {
 .top-wrapper h1 {
   opacity: 0.7;
   font-size: 45px;
-  letter-spacing: 10px;
+  letter-spacing: 5px;
   margin-bottom: 10px;
 }
 
@@ -36,42 +40,36 @@ a {
   margin-bottom: 3px;
 }
 
+.btn-wrapper {
+  text-align: center;
+  margin: 20px 0;
+}
 
+.btn-wrapper p {
+  margin: 10px 0;
+}
 
-.facebook:hover {
+.signup {
+  background-color: #239b76;
+}
+
+.facebook {
   background-color: #3b5998;
   margin-right: 10px;
-  box-shadow: 0 5px rgba(6, 81, 151, 0.9);
-}
-.facebook:active{
-  position:relative;
-  top: 5px;
-  box-shadow:none;
 }
 
-.twitter:hover {
+.twitter {
   background-color: #55acee;
-  margin-right: 10px;
-  box-shadow: 0 5px rgba(80, 145, 231, 0.9);
-
-}
-.twitter:active{
-  position:relative;
-  top: 5px;
-  box-shadow:none;
-}
-.google:hover{
-  background-color: rgba(211, 47, 18, 0.9);
-  margin-right: 10px;
-  box-shadow: 0 5px rgba(126, 0, 38, 0.9);
-}
-.google:active{
-  position:relative;
-  top: 5px;
-  box-shadow:none;
-  
 }
 
+.btn {
+  padding: 12px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  text-align: center;
+}
 
 .btn:hover {
   opacity: 1;
@@ -81,37 +79,56 @@ a {
   margin-right: 5px;
 }
 
-
 header {
   height: 65px;
   width: 100%;
   background-color: rgba(34, 49, 52, 0.9);
-  z-index:10;
-  background-color: rgba(17, 18, 19, 0.9);
   position :fixed;
   top: 0;
   z-index: 10;
-  padding-top:10px;
-  padding-left:20;
-  font-size:15px;
-  color:white;
+}
+
+.logo {
+  width: 124px;
+  margin-top: 20px;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-right {
+  float: right;
+  margin-right: -25px;
+}
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.lesson-wrapper {
+  /* Hapus CSS untuk height */
   
+  padding-bottom:80px; 
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f7f7f7;
+  text-align: center;
+
 }
-header h1 {
-  margin-left:10px;
-}
-
-
-
-
-
-
-
-
 
 .heading {
-  padding-top: 60px;
-  padding-bottom: 30px;
+  padding-top: 80px;
+  padding-bottom: 50px;
   color: #5f5d60;
 }
 
@@ -119,115 +136,66 @@ header h1 {
   font-weight: normal;
 }
 
-/* Tambahkan CSS untuk lesson */
 .lesson {
   float:left;
-  width:25%;
-  text-align:center;
-}
-.form-login {
-  
-  margin: 0;
-  padding: 0;
-  outline: 0;
-  font-family: cursive;
-  position:relative;
-  top:150px;
-  left:98%;
-  transform: translate(-50%,-50%);
-  padding: 2px 22px;
-  width: 300px;
-  background-color: rgba(0,0,0,.7);
-  border-radius: 50px;
-  box-shadow: 5px 10px #888888;
- 
-}
-.p-log{
-  margin:10px;
-}
-input {
-  padding:10px;
-  border-radius:50px;
-}
-.btn {
-  padding: 12px 24px;
-  color: white;
-  display: inline-block;
-  opacity: 0.8;
-  border-radius: 4px;
-  text-align: center;
-}
-.log-in{
-  background-color:black;
-  padding: 12px 24px;
-  color: white;
-  display: inline-block;
-  opacity: 0.8;
-  border-radius: 4px;
-  text-align: center;
-  margin-bottom:10px;
-  
-}
-.log-in:hover{
-  background-color:black;
-  padding: 12px 30px;
-  color: white;
-  display: inline-block;
-  opacity: 0.8;
-  border-radius: 4px;
-  text-align: center;
-  margin-bottom:10px;
-  background-color: rgba(255, 255, 255, 0.3)
-  
+  width: 25%;
 }
 
-.topnav input {
-  width:300px;
-  position:relative;
-  top:-50px;
-  left:15%;
-  
+.lesson-icon {
+  position: relative;
 }
-.topnav input[type=text] {
-  padding: 6px;
-  border: none;
-  margin-top: 8px;
-  margin-right: 16px;
-  font-size: 17px;
+
+.lesson-icon p {
+  position: absolute;
+  top: 44%;
+  width: 100%;
+  color: white;
 }
-.ikon {
-  position:relative;
-  top:-96px;
-  left:7%;
-}
-.tanda {
-  padding-right:40px;
-  
-}
-.ikon-1{
-  position:relative;
-  top:-157;
-  left:80%;
-  padding-top:15px;
-  
-}
-.lesson-icon{
-  margin:10;
-  
-  
-  height:200px;
-  background-image:url(https://3.bp.blogspot.com/-6veiorvXI90/WgITbI4zlzI/AAAAAAAAANM/UPIGezTZjkYPGo7pw80QnDW8pxud0SlrwCLcBGAs/s1600/JENIS%2BPAKAIAN%2BWANITA%2B%252B%2BGAMBAR%2BPERNAH%2BDENGAR%2B%2BBLUS%2BHOODIE%2BDAN%2BSEMACAMNNYA.png);
-  background-size:cover;
-}
-.lesson a {
-  padding: 12px 24px;
-  color: black;
+
+.text-contents {
+  width: 80%;
   display: inline-block;
-  opacity: 0.8;
-  border-radius: 4px;
-  text-align: center;
-  background-color:black;
-  
+  margin-top: 15px;
+  font-size: 15px;
+  color: #b3aeb5;
 }
 
+.heading h3 {
+  font-weight: normal;
+}
 
+.message-wrapper {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.message {
+  padding: 15px 40px;
+  background-color: #5dca88;
+  cursor: pointer;
+  box-shadow: 0 7px #1a7940;
+}
+
+.message:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+footer img {
+  width: 125px;
+}
+
+footer p {
+  color: #b3aeb5;
+  font-size: 12px;
+}
+
+footer {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.clear {
+  clear:left;
+}
